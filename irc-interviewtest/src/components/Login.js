@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import '../shared/css/style.css';
+import '../shared/scss/style.scss';
 
 export const Login = () => {
 
@@ -23,7 +23,6 @@ export const Login = () => {
         alert("Clicked "+loginValues.email + " " + loginValues.password + " " + loginValues.remember_me);
     }
 
-
     return (
         <body className="irc">
             <div className="container-fluid h-100">
@@ -32,7 +31,7 @@ export const Login = () => {
                         <div className="page-header mb-4" id="banner">
                             <div className="text-center">
                                 <a href="#">
-                                    <img src={"../shared/img/LOGO.png"}/>
+                                    <img src={require("../shared/img/LOGO.png")}/>
                                 </a>
                             </div>
                         </div>
@@ -76,7 +75,7 @@ export const Login = () => {
                                     </div>
                                 </div>
                                 <div className="form-group mb-3">
-                                    <button onClick={handleLogin} type="submit" className="btn btn-primary">
+                                    <button onSubmit={handleLogin} className="btn btn-primary">
                                         Continue
                                     </button>
                                 </div>
