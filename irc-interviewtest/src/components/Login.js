@@ -20,7 +20,11 @@ export const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        alert("Clicked "+loginValues.email + " " + loginValues.password + " " + loginValues.remember_me);
+        alert(
+            "Clicked!\nEmail: " + loginValues.email + 
+            "\nPassword: " + loginValues.password + 
+            "\nRemember Me: " + loginValues.remember_me
+        );
     }
 
     return (

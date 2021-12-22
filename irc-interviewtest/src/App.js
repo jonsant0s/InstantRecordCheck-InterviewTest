@@ -2,9 +2,7 @@ import React from 'react';
 
 import { Login } from './components/Login';
 
-import './App.scss';
-
-function App() {
+const App = () => {
   return (
       <Login/>
   );
